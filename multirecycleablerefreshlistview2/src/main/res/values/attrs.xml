@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MultiRecycleableListView">
+        <attr name="softEdge" format="boolean"/>
+        <attr name="softRatio" format="float"/>
+    </declare-styleable>
+</resources>
