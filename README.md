@@ -1,7 +1,5 @@
 # MultiRecycleableRefreshListView
 ## 模仿官方RecyclerView的一个多类型可复用listview
-[![Watch the video]](https://github.com/1249848166/MultiRecycleableRefreshListView/blob/master/上滑复用.mp4)
-
 使用，添加依赖：
 ```java
 allprojects {
