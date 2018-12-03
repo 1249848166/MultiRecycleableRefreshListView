@@ -1,6 +1,7 @@
 # MultiRecycleableRefreshListView
 ## 模仿官方RecyclerView的一个多类型可复用listview
 [![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://youtu.be/vt5fpE0bzSY)
+
 使用，添加依赖：
 ```java
 allprojects {
