@@ -1,5 +1,20 @@
 # MultiRecycleableRefreshListView
 ## 模仿官方RecyclerView的一个多类型可复用listview
+[![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://youtu.be/vt5fpE0bzSY)
+使用，添加依赖：
+```java
+allprojects {
+		repositories {
+			...
+			maven { url 'https://www.jitpack.io' }
+		}
+	}
+```
+```java
+dependencies {
+	        implementation 'com.github.1249848166:MultiRecycleableRefreshListView:1.0'
+	}
+```
 这两天打算自己实现多种类可回收控件，原因是安卓自带的RecyclerView虽然也实现了回收复用，据说多种类型回收复用也可以（事实上我也是这样用的，但是懒得看源码，也不知道类型大于等于二以后是不是真的能够很好的回收。）所以为了刨根问底，我决定自己实现RecyclerView的功能，并在此基础上将多类型视图的复用机制塞进控件里面，这样在外部就不用写那么多选择判断语句了，减小耦合性。
 实际上我最后没能减少这一部分耦合，因为从一开始就陷入了固定架构中。
 ## 先说我是怎么实现复用的吧。
@@ -452,3 +467,4 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 就是这么简单，和RecyclerView一样，甚至更简单，因为省去了LayoutManager和ItemDecoration等内部一系列复杂的功能。
+
